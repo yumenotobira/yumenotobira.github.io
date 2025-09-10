@@ -1,0 +1,9 @@
+var o={exports:{}},n={};/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var d;function m(){if(d)return n;d=1;var s=Symbol.for("react.transitional.element"),x=Symbol.for("react.fragment");function l(c,t,r){var i=null;if(r!==void 0&&(i=""+r),t.key!==void 0&&(i=""+t.key),"key"in t){r={};for(var a in t)a!=="key"&&(r[a]=t[a])}else r=t;return t=r.ref,{$$typeof:s,type:c,key:i,ref:t!==void 0?t:null,props:r}}return n.Fragment=x,n.jsx=l,n.jsxs=l,n}var u;function h(){return u||(u=1,o.exports=m()),o.exports}var e=h();function j(){return e.jsx("button",{onClick:()=>window.history.back(),className:"rounded-lg flex items-center text-gray-700 hover:text-gray-800 transition-colors duration-200 hover:bg-gray-100 p-1 group cursor-pointer",children:e.jsx("svg",{width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",className:"transition-all duration-200",children:e.jsx("path",{d:"M19 12H5M12 19L5 12L12 5",strokeLinecap:"round",strokeLinejoin:"round",fill:"none"})})})}function v({date:s}){return e.jsxs("div",{className:"flex gap-2",children:[e.jsx("span",{className:"text-sm text-gray-500",children:"公開日:"}),e.jsx("time",{className:"text-sm text-gray-500",children:s.toLocaleDateString("ja-JP",{year:"numeric",month:"long",day:"numeric"})})]})}function f({post:s}){return e.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-[1fr_auto] sm:gap-4 items-baseline",children:[e.jsxs("div",{className:"flex items-center gap-4 min-w-0",children:[e.jsx("div",{className:"hidden sm:block",children:e.jsx(j,{})}),e.jsx("h2",{className:"text-2xl font-bold text-gray-700 min-w-0",children:s.data.title})]}),e.jsx("div",{className:"justify-self-end",children:e.jsx(v,{date:s.data.publishDate})})]})}export{f as default};
